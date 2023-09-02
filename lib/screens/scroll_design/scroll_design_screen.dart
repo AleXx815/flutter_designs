@@ -20,10 +20,35 @@ class MainContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [],
+    const textStyle = TextStyle(
+      color: Colors.white,
+      fontSize: 38,
+      fontWeight: FontWeight.bold,
+    );
+    return const SafeArea(
+      child: Center(
+        child: Column(
+          children: [
+            SizedBox(
+              height: 30,
+            ),
+            Text(
+              "11°",
+              style: textStyle,
+            ),
+            Text(
+              "Miércoles",
+              style: textStyle,
+            ),
+            Spacer(),
+            Icon(
+              Icons.keyboard_arrow_down_rounded,
+              color: Colors.white,
+              size: 150,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
