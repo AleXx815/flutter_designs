@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class BasicDesignScreen extends StatelessWidget {
   const BasicDesignScreen({super.key});
@@ -17,7 +18,11 @@ class BasicDesignScreen extends StatelessWidget {
             margin: const EdgeInsets.all(30),
             child: const Text(
                 "Inspirado en la historia bíblica del sacrificio de Isaac, la historia cuenta como Isaac intenta huir de su propia madre, siendo que ella cree que Dios le ha comandado a sacrificar a su hijo. The Binding of Isaac contiene una atmósfera oscura y humor escatólogico. Isaac tiene que atravesar todo tipo de lugares para huir mientras combate todo tipo de monstruos - desde demonios hasta pilas de popo vivas con caras sonrientes. Todo esto combinado como múltiples referencias a otras series de videojuegos y demás, y alusiones a trabajos previos de Edmund."),
-          )
+          ),
+          ElevatedButton(
+            onPressed: () => context.go("/scroll-screen"),
+            child: const Text("GO NEXT PAGE"),
+          ),
         ],
       ),
     );
