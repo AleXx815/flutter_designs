@@ -1,3 +1,4 @@
+import 'package:designs_app_number_1/widgets/background.dart';
 import 'package:flutter/material.dart';
 
 class CompositeDesignScreen extends StatelessWidget {
@@ -5,6 +6,12 @@ class CompositeDesignScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold(
+      body: Stack(
+        children: [
+          BackgroundCompositeDesign(),
+        ],
+      ),
+    );
   }
 }
