@@ -17,6 +17,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: "Práctica primer diseño",
+      theme: ThemeData.dark(),
       routerConfig: appRouter,
     );
   }
