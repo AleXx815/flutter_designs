@@ -12,5 +12,9 @@ final appRouter = GoRouter(
       path: "/scroll-screen",
       builder: (context, state) => const ScrollDesignScreen(),
     ),
+    GoRoute(
+      path: "/composite-screen",
+      builder: (context, state) => const CompositeDesignScreen(),
+    ),
   ],
 );

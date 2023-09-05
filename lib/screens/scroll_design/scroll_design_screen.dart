@@ -102,7 +102,7 @@ class SecondPage extends StatelessWidget {
       color: const Color(0xff46b9d5),
       child: Center(
         child: ElevatedButton(
-          onPressed: () => context.go("/third-page"),
+          onPressed: () => context.go("/composite-screen"),
           style: TextButton.styleFrom(
             backgroundColor: const Color(0xff0098FA),
             // shape: const StadiumBorder(),
